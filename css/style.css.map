@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,MAAM;CAAG;;ACFxB,AAAA,MAAM,CAAC;EACH,UAAU,EAAE,KAAK;CAAG;;ACDxB,AAAA,MAAM,CAAC;EACH,UAAU,EAAE,KAAK;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_grid.sass",
+        "../sass/blocks/_header.sass",
+        "../sass/blocks/_footer.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}

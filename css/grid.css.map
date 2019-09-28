@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,MAAM;CAAG",
+    "sources": [
+        "../sass/blocks/grid.sass"
+    ],
+    "names": [],
+    "file": "grid.css"
+}
