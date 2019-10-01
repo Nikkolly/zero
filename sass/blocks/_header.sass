@@ -1,2 +1,67 @@
-header
-    background: green
+.header
+    font-family: 'Roboto', sans-serif
+    &-flex
+        display: flex
+        justify-content: space-between
+    &-top
+        background-color: #303030
+    &__btn
+        float: right
+        line-height: 36px
+        color: #1b1b1b
+        background-color: #ffc222
+        padding: 5px 20px 4px 50px
+        font-size: 16px
+        display: block
+        position: relative
+        &::before
+             font-family: 'icomoon'
+             content: "\f0b1"
+             position: absolute
+             left: 22px
+             color: #1b1b1b
+
+    &__phone
+        color: #cbcacb
+        letter-spacing: 0.25px
+        line-height: 45px
+        padding-left: 20px
+        padding-right: 30px
+        position: relative
+        &::before
+             font-family: 'icomoon'
+             content: "\f095"
+             position: absolute
+             left: 0
+             color: #ffc222
+    &__mail
+        color: #cbcacb
+        letter-spacing: 0.25px
+        line-height: 45px
+        padding-left: 24px
+        position: relative
+        &::before
+             font-family: 'icomoon'
+             content: "\f003"
+             position: absolute
+             left: 0
+             color: #ffc222
+    &-content
+        padding: 34px 0 23px
+.menu
+    &-item
+        display: inline-block
+        &__link
+            color: #323232
+            font-size: 16px
+            line-height: 36px
+            border: 1px solid transparent
+            padding: 0 17px
+            margin-left: 10px
+            transition: all 0.4s
+    a
+        &:hover
+            border-color: #ffc222
+
+                
+            
