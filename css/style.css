@@ -29,6 +29,28 @@ body {
   color: #5e5e5e;
 }
 
+.default__btn {
+  color: #d3d2d2;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #ffc222;
+  border-right: 20px solid #ffc222;
+  padding: 8px 30px 8px 24px;
+  position: relative;
+}
+
+.default__btn::after {
+  content: "\f105";
+  font-family: 'icomoon';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -12px;
+}
+
 .header {
   font-family: 'Roboto', sans-serif;
 }
@@ -40,6 +62,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-top {
@@ -121,7 +145,91 @@ body {
   border-color: #ffc222;
 }
 
+#modal {
+  display: none;
+}
+
 footer {
   background: green;
+}
+
+.slider {
+  background-image: url(../img/slider-fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.slider__inner {
+  position: relative;
+}
+
+.slider__item {
+  text-align: center;
+  padding-top: 110px;
+  margin: 0 auto;
+}
+
+.slider__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.slider__text {
+  font-size: 18px;
+  line-height: 24px;
+  color: #d3d2d2;
+  margin-bottom: 50px;
+}
+
+.slick-disabled.slick-btn {
+  background-color: transparent;
+  cursor: default;
+}
+
+.slick-btn {
+  top: 70%;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  position: absolute;
+  background-color: #ffc222;
+  cursor: pointer;
+  outline: none;
+}
+
+.slick-btn::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-next::after {
+  content: "\f105";
+  font-family: 'icomoon';
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-prev::after {
+  content: "\f104";
+  font-family: 'icomoon';
 }
 /*# sourceMappingURL=style.css.map */

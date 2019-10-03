@@ -7,10 +7,11 @@
     <title>Zero</title>
     <link
       href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -21,7 +22,7 @@
             <a href="tel:+380963092145" class="header__phone"
               >+38 (096) 309 21 45</a>
             <a href="" class="header__mail">layout585@gmail.com</a>
-            <a href="" class="header__btn">Бесплатная консультация</a>
+            <a href="" data-fancybox data-src="#modal" href="javascript:;" class="header__btn">Бесплатная консультация</a>
           </div>
         </div>
       </div>
@@ -51,5 +52,39 @@
         </div>
       </div>
     </header>
+    <main>
+      <section class="section slider">
+        <div class="container">
+          <div class="slider__inner">
+            <div class="slider__item">
+              <div class="slider__title">Комплексное закрытие предприятия</div>
+              <div class="slider__text">Полное прекрощение существование юридического лица с сахроннением<br> легальности предыдущей деятельности</div>
+              <a href="#" data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default__btn">Оставить заявку</a>
+            </div>
+            <div class="slider__item">
+              <div class="slider__title">Комплексное закрытие предприятия</div>
+              <div class="slider__text">Полное прекрощение существование юридического лица с сахроннением<br> легальности предыдущей деятельности</div>
+              <a href="#" data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default__btn">Оставить заявку</a>
+            </div>
+            <div class="slider__item">
+              <div class="slider__title">Комплексное закрытие предприятия</div>
+              <div class="slider__text">Полное прекрощение существование юридического лица с сахроннением<br> легальности предыдущей деятельности</div>
+              <a href="#" data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default__btn">Оставить заявку</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="#" id="modal">
+      <h2>Hello!</h2>
+      <p>You are awesome!</p>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

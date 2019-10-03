@@ -14,3 +14,22 @@ body
     font-size: 14px
     line-height: 18px
     color: #5e5e5e
+.default
+    &__btn
+        color: #d3d2d2
+        font-size: 14px
+        line-height: 24px
+        font-weight: 500
+        font-family: 'Roboto', sans-serif
+        border: 1px solid #ffc222
+        border-right: 20px solid #ffc222
+        padding: 8px 30px 8px 24px
+        position: relative
+        &::after
+             content: "\f105"
+             font-family: 'icomoon'
+             position: absolute
+             top: 50%
+             transform: translateY(-50%)
+             right: -12px
+        
