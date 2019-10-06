@@ -1,0 +1,43 @@
+.advanteges
+    background-image: url(../img/planshet.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    min-height: 285px
+    padding: 55px 0 40px
+    &__inner
+        display: flex
+        justify-content: space-between
+        text-align: center
+        color: #ffffff
+    &__item
+        max-width: 360px
+        padding: 0 20px
+    &__title
+        font-size: 18px
+        line-height: 24px
+        font-weight: 500
+        font-family: 'Roboto', sans-serif
+        padding: 60px 10px 15px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 40px
+            height: 40px
+            border: 2px solid #ffc222
+            top: 0
+            left: 50%// Левый край элемента станет на середине ширины радителя
+            transform: translateX(-50%)// Сместится влево на 50% от своей ширины
+        &::after
+            font-family: 'icomoon'
+            content: "\f10e"
+            font-size: 14px
+            position: absolute
+            top: 10px
+            left: 50%// Левый край элемента станет на середине ширины радителя
+            transform: translateX(-50%)// Сместится влево на 50% от своей ширины           
+    &__text
+        line-height: 24px
+        color: #d3d2d2
+        letter-spacing: 0.1px

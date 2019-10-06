@@ -1,0 +1,72 @@
+.form
+    padding: 30px 0 0 0
+    &-box
+        max-width: 520px
+        padding-left: 140px
+        position: relative
+        &::before
+            content: ""//Если что-то вышаешь на before обязательный параметр
+            position: absolute
+            width: 100px
+            height: 2px
+            background-color: #ffc222
+            top: 11px
+            left: 0
+    &__title
+        font-size: 24px
+        font-weight: 500
+        line-height: 24px
+        color: #212020
+        font-family: 'Roboto', sans-serif
+        margin-bottom: 10px
+    &__text
+        letter-spacing: 0.1px
+    &__inner
+        background-image: url(../img/girl.png)
+        background-position: right bottom
+        background-repeat: no-repeat
+        min-height: 460px
+        padding-bottom: 40px
+    &__label
+        line-height: 36px
+        color: #282828
+        font-family: 'Roboto', sans-serif
+    &__input
+        margin-bottom: 8px
+        outline: none
+        height: 40px
+        border: 1px solid #e6e6e6
+        padding: 0 10px
+    &__select
+        outline: none
+        height: 40px
+        border: 1px solid #e6e6e6
+        padding-left: 17px
+        color: #e6e6e6
+    &__textarea
+        border: 1px solid #e6e6e6
+        min-height: 207px
+        outline: none
+        padding: 10px
+        resize: none// Отменяет уменьшение textarea путем манипуляции с правым нижнем углом
+        margin-bottom: 40px
+    &__box
+        max-width: 850px
+        padding-top: 45px
+        &-inner
+            display: flex
+            justify-content: space-between
+        &-left
+            max-width: 260px
+            width: 100%
+        &-right
+            max-width: 555px
+            width: 100%
+.form__box-inner
+    label,input,textarea,select
+        display: block
+        width: 100%
+.default__btn.form__btn
+    background-color: transparent
+    color: #282828
+    float: right 

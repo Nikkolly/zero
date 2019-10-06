@@ -1,0 +1,117 @@
+.news
+    padding: 50px 0 110px
+    background-color: #f9f9f9
+    &-box
+        max-width: 520px
+        padding-left: 140px
+        position: relative
+        &::before
+            content: ""//Если что-то вышаешь на before обязательный параметр
+            position: absolute
+            width: 100px
+            height: 2px
+            background-color: #ffc222
+            top: 11px
+            left: 0
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-bottom: 60px
+    &__title
+        font-size: 24px
+        font-weight: 500
+        line-height: 24px
+        color: #212020
+        font-family: 'Roboto', sans-serif
+        margin-bottom: 10px
+    &__text
+        letter-spacing: 0.1px
+    &__btn
+        color: #373636
+        line-height: 24px
+        letter-spacing: 0.25px
+        padding: 5px 38px
+        border: 3px solid #e6e6e6
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__slider
+        max-width: 555px
+        width: 100%
+        background-color: #fff
+        box-shadow: 0px 5px 15.36px 0.64px rgba(128, 127, 127, 0.13)
+        padding: 35px
+        position: relative
+        &::before
+            position: absolute
+            content: "\f10e"
+            font-family: 'icomoon'
+            width: 65px
+            height: 30px
+            color: #ffffff
+            font-size: 16px
+            text-align: center
+            line-height: 30px
+            background-color: #ffc222
+            top: 0
+            left: 70px
+        &-title
+            font-size: 18px
+            line-height: 24px
+            color: #242424
+            font-weight: 500
+            font-family: 'Roboto', sans-serif
+            letter-spacing: 0.5px
+            margin-bottom: 15px
+        &-text
+            margin-bottom: 30px
+        &-autor
+            letter-spacing: 0.1px
+            color: #212121
+            font-weight: 500
+            font-family: 'Roboto', sans-serif
+    &__blog
+        max-width: 260px
+        width: 100%
+        &-title
+            font-size: 16px
+            font-weight: 500
+            font-family: 'Roboto', sans-serif
+            letter-spacing: 0.5px
+            color: #242424
+            padding: 12px 0
+        &-text
+            letter-spacing: 0.1px
+            color: #5e5e5e
+    &__images
+        position: relative
+    &__data
+        position: absolute
+        background-color: #ffc222
+        width: 50px
+        height: 55px
+        color: #ffffff
+        text-align: center
+        padding-top: 30px
+        font-weight: 700
+        top: 0
+        left: 10px
+// Далее речь пойдет о ситуации когда есть нейкий родитель с классом .news__slider-inner,
+// а у потомков есть классы - .slick-btn.slick-next, .slick-btn.slick-prev или класс появляется - .slick-disabled в процессе интарактивного взаимодействия со строницей 
+.news__slider-inner
+    .slick-btn
+        top: auto
+        bottom: -125px
+    .slick-btn.slick-next
+        right: -35px
+    .slick-btn.slick-prev
+        right: 20px
+        left: auto
+    .slick-disabled 
+        color: #dadada
+        background-color: #dadada
+   
+
+
+        
