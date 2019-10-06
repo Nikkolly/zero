@@ -1,2 +1,70 @@
-footer
-    background: green
+.footer
+    &__content
+        background-color: #595959
+        padding: 20px 0 30px
+    &__info
+        max-width: 360px
+    &__inner
+        display: flex
+        justify-content: space-between
+        .header__btn
+            float: none
+            display: inline-block
+    &__map
+        padding-top: 10px
+        max-width: 630px
+    &__title
+        font-family: 'Roboto', sans-serif
+        font-size: 16px
+        line-height: 36px
+        font-weight: 500
+        letter-spacing: 0.5px
+        color: #fff
+    &__text
+        margin-bottom: 20px
+        color: #d3d2d2
+    &__list
+        padding-top: 10px
+    &__item
+        margin-top: 10px
+    &__link
+        font-size: 16px
+        color: #ffffff
+        line-height: 24px
+        letter-spacing: 0.25px
+        font-family: 'Roboto', sans-serif
+        font-weight: 400
+        padding-left: 33px// Зарезирвировали место под ::before
+        position: relative
+        &::before
+            content: "\f003"
+            position: absolute
+            left: 0
+            color: #ffc222
+            font-family: 'icomoon'            
+    &__copy
+        text-align: center
+        background-color: #303030
+        font-family: 'Roboto', sans-serif
+        font-size: 12px
+        line-height: 24px
+        font-weight: 500
+        letter-spacing: 0.5px
+        color: #fff
+        padding: 8px 0
+.footer__link.footer__phone
+    &::before
+        content: "\f095"
+        position: absolute
+        left: 3px
+        color: #ffc222
+        font-family: 'icomoon'
+.footer__link.footer__adress
+    &::before
+        content: "\f041"
+        position: absolute
+        left: 3px
+        color: #ffc222
+        font-family: 'icomoon'
+
+    

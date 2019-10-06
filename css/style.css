@@ -149,10 +149,6 @@ body {
   display: none;
 }
 
-footer {
-  background: green;
-}
-
 .slider {
   background-image: url(../img/slider-fon.jpg);
   background-repeat: no-repeat;
@@ -717,5 +713,124 @@ footer {
 .news__slider-inner .slick-disabled {
   color: #dadada;
   background-color: #dadada;
+}
+
+.footer__content {
+  background-color: #595959;
+  padding: 20px 0 30px;
+}
+
+.footer__info {
+  max-width: 360px;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__inner .header__btn {
+  float: none;
+  display: inline-block;
+}
+
+.footer__map {
+  padding-top: 10px;
+  max-width: 630px;
+}
+
+.footer__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  color: #d3d2d2;
+}
+
+.footer__list {
+  padding-top: 10px;
+}
+
+.footer__item {
+  margin-top: 10px;
+}
+
+.footer__link {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-left: 33px;
+  position: relative;
+}
+
+.footer__link::before {
+  content: "\f003";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+  font-family: 'icomoon';
+}
+
+.footer__copy {
+  text-align: center;
+  background-color: #303030;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #fff;
+  padding: 8px 0;
+}
+
+.footer__link.footer__phone::before {
+  content: "\f095";
+  position: absolute;
+  left: 3px;
+  color: #ffc222;
+  font-family: 'icomoon';
+}
+
+.footer__link.footer__adress::before {
+  content: "\f041";
+  position: absolute;
+  left: 3px;
+  color: #ffc222;
+  font-family: 'icomoon';
+}
+
+#modal {
+  width: 300px;
+}
+
+.modal-form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.modal-form__input.form__submit {
+  background-color: #ffc222;
+  border: none;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
