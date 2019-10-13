@@ -10,4 +10,8 @@ $(function () {
         prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
         infinite: false
     });
+
+    $('.header__btn-menu').on('click', function (){
+        $('.menu__list').slideToggle();
+    });
 });

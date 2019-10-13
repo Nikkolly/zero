@@ -70,3 +70,24 @@
     background-color: transparent
     color: #282828
     float: right 
+
+@media ( max-width: 1150px )
+    .form
+        &__inner
+            background-image: none
+
+@media ( max-width: 900px )
+    .form
+        &-box
+            padding-left: 0
+            text-align: center
+            margin: 0 auto 30px
+            &::before
+                display: none 
+        &__box
+            &-inner
+                display: block
+            &-left
+                max-width: 100%
+            &-right
+                max-width: 100%

@@ -70,6 +70,34 @@
         color: #373636
         &::after
             color: #ffffff
+
+@media ( max-width: 1050px )
+    .about      
+        &__items
+            display: block
+        &__item
+            max-width: 80%
+            min-height: 330px
+            margin: 30px auto
+
+@media ( max-width: 600px )
+    .about   
+        &__item
+            max-width: 100%
+            min-height: 375px
+            margin: 30px auto
+
+@media ( max-width: 840px )
+    .about
+        &-box
+            padding-left: 0
+            text-align: center
+            margin: 0 auto 30px
+            &::before
+                display: none   
+        &__top
+            display: block
+            text-align: center// Так как кнопка сделана ввиде ссылки , то хорошо сработает иммено это свойтсво
             
 
   

@@ -21,6 +21,8 @@
              position: absolute
              left: 22px
              color: #1b1b1b
+        &-menu
+            display: none
 
     &__phone
         color: #cbcacb
@@ -65,6 +67,50 @@
             border-color: #ffc222
 #modal
     display: none
+
+//Мобильная адаптация
+@media ( max-width: 700px )// Минимальный экран, важный для нас - это 320px
+    .header
+        &__contacts
+            text-align: center
+        &__btn
+            float: none
+            &::before
+                display: none
+            &-menu
+                display: block
+                font-size: 28px
+                cursor: pointer
+    .menu
+        &__list
+            display: none
+            position: absolute
+            margin-top: 20px
+            left: 0
+            right: 0
+            z-index: 50
+        &-item
+            display: block
+            text-align: center
+            &__link
+                display: block
+                background-color: #ffc222
+                border-top: 1px solid #fff
+
+@media ( max-width: 382px )
+    .header
+        &__mail
+            padding-right: 30px
+        &__contacts
+            text-align: center
+        &__btn
+            &::before
+                display: block
+
+@media ( min-width: 700px )// Для мониторов больше 700, прописываем для ситуаций, когда исчезает блоковость меню из-за обратного нажатия на кнопку(jQuery)
+    .menu
+        &__list
+            display: block !important
 
                 
             

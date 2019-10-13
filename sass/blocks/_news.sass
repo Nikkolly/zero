@@ -73,7 +73,7 @@
             font-family: 'Roboto', sans-serif
     &__blog
         max-width: 260px
-        width: 100%
+        //width: 100%
         &-title
             font-size: 16px
             font-weight: 500
@@ -111,6 +111,49 @@
     .slick-disabled 
         color: #dadada
         background-color: #dadada
+
+@media ( max-width: 1150px )
+    .news
+        &__inner
+            display: block
+        &__slider
+            max-width: 100%
+            margin-bottom: 90px
+        &__blog
+            display: block
+            max-width: 100%
+            margin-bottom: 30px
+            &::after
+                content: ""
+                clear: both
+                display: block
+        &__images
+            float: left
+            margin-right: 50px
+@media ( max-width: 900px )
+    .news
+        &-box
+            padding-left: 0
+            text-align: center
+            margin: 0 auto 30px
+            &::before
+                display: none   
+        &__top
+            display: block
+            text-align: center
+@media ( max-width: 510px )
+    .news
+        &__blog
+            text-align: center
+            margin-top: 20px
+        &__images
+            float: none           
+            margin-right: 10px
+        &__data
+            display: none
+    .news__slider-inner
+        .slick-btn
+            bottom: -105px
    
 
 
