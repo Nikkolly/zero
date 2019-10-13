@@ -940,6 +940,11 @@ body {
 .footer__map {
   padding-top: 10px;
   max-width: 630px;
+  width: 100%;
+}
+
+.footer__iframe {
+  width: 100%;
 }
 
 .footer__title {
@@ -1031,5 +1036,20 @@ body {
   background-color: #ffc222;
   border: none;
   color: #fff;
+}
+
+@media (max-width: 1150px) {
+  .news {
+    padding: 50px 0 40px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .footer__inner {
+    display: block;
+  }
+  .footer__map {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
